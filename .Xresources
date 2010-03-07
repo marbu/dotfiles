@@ -1,0 +1,5 @@
+XTerm*background: black
+XTerm*foreground: white
+XTerm*font: -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-*
+XTerm*pointerColor: red
+XTerm*pointerColorBackground: black
