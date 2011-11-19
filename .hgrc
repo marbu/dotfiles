@@ -1,0 +1,11 @@
+[ui]
+editor = vim
+username = Martin B. <martin.bukatovic@gmail.com>
+
+[extensions]
+color =
+extdiff =
+
+[diff]
+git = True
+unified = 5
