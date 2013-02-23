@@ -1,0 +1,23 @@
+[user]
+  name = Martin Bukatovic
+  email = martin.bukatovic@gmail.com
+  editor = vim
+[color]
+  ui = auto
+[merge]
+  tool = vimdiff
+[apply]
+  whitespace = strip
+[alias]
+  ci = commit
+  st = status -sb
+  dc = diff --cached
+  df = diff
+  wh = whatchanged
+  rank = shortlog -sn --no-merges
+  graph = log --graph --oneline --decorate
+  tags = tag -n1 -l
+[github]
+  user = marbu
+[push]
+  default = matching
