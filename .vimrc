@@ -54,6 +54,13 @@ set backupdir=$HOME/.vim/backup " store backup files in predefined directory
 set backup                      " enable backup by default
 
 "
+" http://www.fi.muni.cz/~kas/blog/index.cgi/computers/spell-checking-vim.html
+"
+
+set spelllang=cs,en,csa  " set default spell language
+set nospell              " turn it off by default
+
+"
 " filetype specific tweaks
 "
 
