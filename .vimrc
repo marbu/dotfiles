@@ -97,3 +97,9 @@ imap <F9> :make<CR>
 
 " automaticke doplnovani ze vsech includovanych veci
 set completeopt=longest,menuone
+
+"
+" pathogen integration
+"
+ 
+execute pathogen#infect()
