@@ -103,3 +103,9 @@ set completeopt=longest,menuone
 "
  
 execute pathogen#infect()
+
+" pandoc: don't use folding
+let g:pandoc_no_folding = 1
+
+" tagbar toggle
+nmap <F8> :TagbarToggle<CR>
