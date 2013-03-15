@@ -75,6 +75,12 @@ autocmd BufRead,BufNewFile *.js   set number
 autocmd BufRead,BufNewFile *.java set number
 
 "
+" new file skeleton templates
+"
+
+autocmd BufNewFile *.[a-zA-Z0-9]\+ silent! 0read $HOME/.vim/skeleton/skeleton.<amatch>:t:e
+
+"
 " others
 "
 

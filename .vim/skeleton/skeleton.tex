@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+
+% language and fonts
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% various tex packages
+\usepackage{a4wide}
+\usepackage{ifpdf}
+\usepackage{url}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+
+% hack for czech accent copy and paste
+\ifpdf
+  \usepackage{cmap}
+\fi
+
+% hyperref: pdf and dvips output
+\ifpdf
+  \usepackage[
+    pdftex,
+    hyperindex,
+    colorlinks=false,
+    linkcolor=black,
+    menucolor=black,
+    pdftitle={title},
+    pdfauthor={Martin Bukatovic},
+  ]{hyperref}
+\else
+  \usepackage[
+    dvips,
+    colorlinks=false,
+    linkcolor=black,
+    menucolor=black
+  ]{hyperref}
+\fi
+
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[LE,RO]{document title}
+%\fancyhead[LO,RE]{name of author}
+
+\author{Martin}
+\title{title}
+
+\begin{document}
+
+\maketitle
+
+%\renewcommand{\refname}{Reference}
+
+\section{Introduction}
+
+%\begin{itemize}\itemsep=-\parskip
+%\item{cmd}: sth will happen,
+%\end{itemize}
+
+\end{document}
