@@ -11,3 +11,4 @@ autocmd BufRead,BufNewFile *.py match BadWhitespace /^\t\+/
 autocmd BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
 autocmd BufWritePre *.py normal m':%s/\s\+$//e '
 autocmd BufRead,BufNewFile *.py set syntax=python
+autocmd BufRead,BufNewFile *.py set commentstring=#\ %s

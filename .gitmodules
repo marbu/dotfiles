@@ -13,3 +13,6 @@
 [submodule "/home/martin/.vim/bundle/vim-gitgutter"]
 	path = /home/martin/.vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "/home/martin/.vim/bundle/vim-commentary"]
+	path = /home/martin/.vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
