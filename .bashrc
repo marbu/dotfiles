@@ -27,6 +27,7 @@ export PYTHONPATH=$PYTHONPATH:"$HOME/local/pylib"
 
 # ruby
 export GEM_HOME="$HOME/local/rubygems/"
+export PATH=$PATH:$GEM_HOME/bin
 
 #
 # aliases
