@@ -11,7 +11,14 @@ example of pluing installation (with another submodule inside):
 
 ~~~
 $ cd
-$ dotfile submodule add -f https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
+$ dotfile submodule add -f https://github.com/davidhalter/jedi-vim.git .vim/bundle/jedi-vim
 $ cd ~/.vim/bundle/jedi-vim
 $ git submodule update
+~~~
+
+submodule update (after cloning):
+
+~~~
+$ cd
+$ dotfile submodule update --init ~/.vim/bundle/vim-pandoc
 ~~~

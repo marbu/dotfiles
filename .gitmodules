@@ -1,18 +1,18 @@
-[submodule "/home/martin/.vim/bundle/jedi-vim"]
-	path = /home/martin/.vim/bundle/jedi-vim
+[submodule ".vim/bundle/jedi-vim"]
+	path = .vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "/home/martin/.vim/bundle/tagbar"]
-	path = /home/martin/.vim/bundle/tagbar
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "/home/martin/.vim/bundle/vim-pandoc"]
-	path = /home/martin/.vim/bundle/vim-pandoc
+[submodule ".vim/bundle/vim-pandoc"]
+	path = .vim/bundle/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc.git
-[submodule "/home/martin/.vim/bundle/vim-orgmode"]
-	path = /home/martin/.vim/bundle/vim-orgmode
+[submodule ".vim/bundle/vim-orgmode"]
+	path = .vim/bundle/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode.git
-[submodule "/home/martin/.vim/bundle/vim-gitgutter"]
-	path = /home/martin/.vim/bundle/vim-gitgutter
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "/home/martin/.vim/bundle/vim-commentary"]
-	path = /home/martin/.vim/bundle/vim-commentary
+[submodule ".vim/bundle/vim-commentary"]
+	path = .vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
