@@ -88,6 +88,12 @@ autocmd BufRead,BufNewFile *.java set number
 autocmd BufNewFile *.[a-zA-Z0-9]\+ silent! 0read $HOME/.vim/skeleton/skeleton.<amatch>:t:e
 
 "
+" remove trailing whitespaces
+"
+
+"autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+
+"
 " others
 "
 
