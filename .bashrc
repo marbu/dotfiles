@@ -81,7 +81,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWUPSTREAM="auto git"
 
-ps1_setup()
+_ps1_command()
 {
   PS1_RETVAL=$?
   PS1_TIME=$(date +"%H:%M:%S")
@@ -90,20 +90,35 @@ ps1_setup()
   else
     PS1_RETVAL=" \[\033[1;31m\]${PS1_RETVAL}\[\033[0m\]"
   fi
+  ${_PS1_COMMAND} "${PS1_COLOR_USER}\u\[\033[0m\]@\h ${PS1_TIME}${PS1_RETVAL} \w" "\n\$ " " (%s $(get_sha))"
 }
 
-ps1_fallback()
+_ps1_olderone()
+{
+  PS1="$1 $(__git_ps1 '(%s $(get_sha))')$2"
+}
+
+_ps1_fallback()
 {
   PS1=$1$2
 }
 
-if type __git_ps1 > /dev/null 2>&1; then
+if [[ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
+  # for fedora 18+
+  . /usr/share/git-core/contrib/completion/git-prompt.sh
   _PS1_COMMAND="__git_ps1"
+elif [[ -f /etc/bash_completion.d/git ]]; then
+  # for fedora 16,17 and rhel 6
+  . /etc/bash_completion.d/git
+  _PS1_COMMAND="_ps1_olderone"
+elif type __git_ps1 > /dev/null 2>&1; then
+  # otherwise at least try if we have __git_ps1 and try older one
+  _PS1_COMMAND="_ps1_olderone"
 else
-  _PS1_COMMAND="ps1_fallback"
+  _PS1_COMMAND="_ps1_fallback"
 fi
 
-PROMPT_COMMAND='ps1_setup;${_PS1_COMMAND} "${PS1_COLOR_USER}\u\[\033[0m\]@\h ${PS1_TIME}${PS1_RETVAL} \w" "\n\$ " " (%s $(get_sha))"'
+PROMPT_COMMAND='_ps1_command'
 
 #
 # other functions
