@@ -2,8 +2,10 @@
 # ~/.bashrc
 #
 
-. /etc/bashrc
-. /usr/share/git-core/contrib/completion/git-prompt.sh
+# source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 export EDITOR=vim
 export PAGER=less
