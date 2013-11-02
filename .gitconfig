@@ -20,4 +20,4 @@
 [github]
   user = marbu
 [push]
-  default = matching
+  default = simple
