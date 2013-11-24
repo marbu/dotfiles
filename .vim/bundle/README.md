@@ -1,22 +1,29 @@
-list of vim plugins:
+# Bundled vim plugins
 
- * <https://github.com/davidhalter/jedi-vim.git>
- * <https://github.com/majutsushi/tagbar.git>
- * <https://github.com/vim-pandoc/vim-pandoc.git>
- * <https://github.com/jceb/vim-orgmode.git>
- * <https://github.com/airblade/vim-gitgutter.git>
- * <https://github.com/tpope/vim-commentary.git>
+This directory (`~/.vim/bundle/`) contains git submodules of vim plugins.
+Submodules are integrated using [vim pathogen](http://www.vim.org/scripts/script.php?script_id=2332).
 
-example of pluing installation (with another submodule inside):
+## Usage
+
+Following examples use my helper script `dotfile` (from scriptpile repo).
+
+Plugin installation:
+
+~~~
+cd
+dotfile submodule add https://github.com/terryma/vim-multiple-cursors.git .vim/bundle/vim-multiple-cursors
+~~~
+
+Plugin installation (with another submodule inside):
 
 ~~~
 $ cd
-$ dotfile submodule add -f https://github.com/davidhalter/jedi-vim.git .vim/bundle/jedi-vim
+$ dotfile submodule add https://github.com/davidhalter/jedi-vim.git .vim/bundle/jedi-vim
 $ cd ~/.vim/bundle/jedi-vim
 $ git submodule update
 ~~~
 
-submodule update (after cloning):
+Submodule update (after cloning):
 
 ~~~
 $ cd
