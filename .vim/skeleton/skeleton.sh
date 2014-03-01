@@ -1,7 +1,8 @@
 #!/bin/bash
 
-show_help() {
-  echo -e "Usage: progname <command> [command-options]\n"
+show_help()
+{
+  echo -e "Usage: $(basename $0) <command> [command-options]\n"
   echo """Commands:
   play    play stream     (options: --cache)
   dump    download stream (options: --name)
