@@ -17,6 +17,7 @@
   rank = shortlog -sn --no-merges
   graph = log --graph --oneline --decorate
   tags = tag -n1 -l
+  root = rev-parse --show-toplevel
 [github]
   user = marbu
 [push]
