@@ -152,3 +152,22 @@ get_sha()
 {
     git rev-parse --short HEAD 2>/dev/null
 }
+
+# git-cd needs to be a shell function to be able to change directory
+# on the other hand this means that it can't be invoked by 'git cd' command
+git-cd()
+{
+  # try to get root directory of git repo, exit if no repo found
+  if ! GIT_ROOT=$(git rev-parse --show-toplevel); then
+    return 1
+  fi
+  if [[ $# = 0 ]]; then
+    # no arguments, cd right into the repo root
+    cd ${GIT_ROOT}
+  elif [[ "$1" = - ]]; then
+    cd -
+  else
+    # otherwise cd wrt repo root
+    cd "${GIT_ROOT}/$1"
+  fi
+}
