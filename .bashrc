@@ -173,9 +173,6 @@ git-cd()
 }
 
 # bash autocompletion for git-cd
-# just a first try (TODO):
-#  - make it recursive
-#  - resolve 1st argument only
 _git-cd()
 {
   if ! GIT_ROOT=$(git rev-parse --show-toplevel); then
@@ -187,6 +184,6 @@ _git-cd()
   if [[ "$CUR" =~ ^/ ]]; then
     CUR=${CUR#"/"}
   fi
-  COMPREPLY=($(cd $GIT_ROOT; compgen -d $CUR))
+  COMPREPLY=($(cd $GIT_ROOT; compgen -S '/' -d $CUR))
 }
-complete -F _git-cd git-cd
+complete -o nospace -F _git-cd git-cd
