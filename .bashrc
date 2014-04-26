@@ -36,7 +36,6 @@ export PATH=$PATH:$GEM_HOME/bin
 #
 
 alias lt='ls -ltr'
-alias vim='vim -p'
 alias mc='mc -d'
 alias man="LANG=C man"
 alias cal="cal -m"
