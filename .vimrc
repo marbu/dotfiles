@@ -104,6 +104,10 @@ imap <F9> :make<CR>
 " automaticke doplnovani ze vsech includovanych veci
 set completeopt=longest,menuone
 
+" vim buffers switching
+map <F1> :args<cr>
+map <F2> :ls<CR>:b<Space>
+
 "
 " pathogen integration
 "
