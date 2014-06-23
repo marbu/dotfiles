@@ -22,6 +22,8 @@ export PATH=$PATH:.cabal/bin
 
 # java
 export CLASSPATH=$CLASSPATH:"$HOME/local/javalib"
+# fix: make java gui work with xmonad
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 # python
 export PYTHON=python2
