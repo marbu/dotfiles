@@ -73,6 +73,9 @@ autocmd BufRead,BufNewFile *.tex      set textwidth=79
 autocmd BufRead,BufNewFile *.md       set textwidth=79
 autocmd BufRead,BufNewFile *.markdown set textwidth=79
 
+" mutt
+autocmd BufRead,BufNewFile /tmp/mutt-* set textwidth=72
+
 " show linenumbers for these source files
 autocmd BufRead,BufNewFile *.c    set number
 autocmd BufRead,BufNewFile *.sh   set number
