@@ -11,6 +11,9 @@ export EDITOR=vim
 export PAGER=less
 export HISTFILESIZE=500000
 
+# fix: make java gui work with xmonad
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 #
 # path
 #
@@ -20,18 +23,8 @@ export PATH=$HOME/bin:$PATH
 # haskell
 export PATH=$PATH:.cabal/bin
 
-# java
-export CLASSPATH=$CLASSPATH:"$HOME/local/javalib"
-# fix: make java gui work with xmonad
-export _JAVA_AWT_WM_NONREPARENTING=1
-
-# python
-export PYTHON=python2
-export PYTHONPATH=$PYTHONPATH:"$HOME/local/pylib"
-
-# ruby
-export GEM_HOME="$HOME/local/rubygems/"
-export PATH=$PATH:$GEM_HOME/bin
+# initialize python virtualenvwrapper
+export WORKON_HOME=~/local/virtualenvs/
 
 #
 # aliases
