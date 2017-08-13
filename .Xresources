@@ -1,3 +1,7 @@
+! marbu's Xresources file
+! force reload replacing previous configuration: xrdb ~/.Xresources
+! force reload merging with current configuration: xrdb -merge ~/.Xresources
+
 XTerm*background: black
 XTerm*foreground: white
 XTerm*font: -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-*
