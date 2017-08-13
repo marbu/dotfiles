@@ -2,14 +2,14 @@
 ! force reload replacing previous configuration: xrdb ~/.Xresources
 ! force reload merging with current configuration: xrdb -merge ~/.Xresources
 
-XTerm*background: black
-XTerm*foreground: white
+XTerm*background: white
+XTerm*foreground: black
 XTerm*font: -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-*
 XTerm*pointerColor: red
 XTerm*pointerColorBackground: black
 
-URxvt*background: black
-URxvt*foreground: white
+URxvt*background: white
+URxvt*foreground: black
 URxvt.scrollBar: false
 
 xscreensaver.newLoginCommand: dm-tool switch-to-greeter

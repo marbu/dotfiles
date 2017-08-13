@@ -17,7 +17,7 @@ filetype plugin indent on          " load filetype plugins and indentations
 syntax on                          " use syntax highlighting by default
 set showcmd                        " display incomplete commands (command mode)
 set ruler                          " show cursor position all the time
-set background=dark                " expect dark terminal emulator theme
+set background=light               " expect dark terminal emulator theme
 set tabstop=4                      " default tab size
 set shiftwidth=4                   " default (auto)indent size
 set backspace=indent,eol,start     " backspace through everything (insert mode)

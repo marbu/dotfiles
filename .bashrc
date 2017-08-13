@@ -66,7 +66,7 @@ alias msplayer="mplayer -user-agent 'NSPlayer/0 (MPlayer; Linux)'"
 #"\[\033[46m\]"   # backgr cyan
 #"\[\033[47m\]"   # backgr white
 
-PS1_COLOR_USER="\[\033[1;33m\]"
+PS1_COLOR_USER="\[\033[0;34m\]"
 
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
