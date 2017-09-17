@@ -4,5 +4,6 @@
 
 set guioptions-=T " set toolbars off
 set nu!
-set guifont=Terminus\ 12
+" to see current font, run `:set guifont?`
+set guifont=xos4\ Terminus\ 12
 colors pablo
