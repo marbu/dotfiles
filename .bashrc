@@ -35,6 +35,10 @@ alias mc='mc -d'
 alias man="LANG=C man"
 alias cal="cal -m"
 
+alias userctl="systemctl --user"
+source /usr/share/bash-completion/completions/systemctl
+complete -F _systemctl userctl
+
 #
 # PS1 prompt
 #
