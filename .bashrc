@@ -35,8 +35,6 @@ alias mc='mc -d'
 alias man="LANG=C man"
 alias cal="cal -m"
 
-alias msplayer="mplayer -user-agent 'NSPlayer/0 (MPlayer; Linux)'"
-
 #
 # PS1 prompt
 #
