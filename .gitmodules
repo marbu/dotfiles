@@ -10,3 +10,6 @@
 [submodule ".vim/pack/marbu/start/vim-gitgutter"]
 	path = .vim/pack/marbu/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/pack/marbu/start/vim-pandoc-syntax"]
+	path = .vim/pack/marbu/start/vim-pandoc-syntax
+	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git

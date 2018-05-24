@@ -111,8 +111,12 @@ set completeopt=longest,menuone
 map <F1> :args<cr>
 map <F2> :ls<CR>:b<Space>
 
-" pandoc: don't use folding
-let g:pandoc_no_folding = 1
+" pandoc
+augroup pandoc_syntax
+  au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+  " disable fancy conceal feature
+  let g:pandoc#syntax#conceal#use = 0
+augroup END
 
 " tagbar toggle
 nmap <F8> :TagbarToggle<CR>
