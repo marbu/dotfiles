@@ -111,12 +111,6 @@ set completeopt=longest,menuone
 map <F1> :args<cr>
 map <F2> :ls<CR>:b<Space>
 
-"
-" pathogen integration
-"
- 
-execute pathogen#infect()
-
 " pandoc: don't use folding
 let g:pandoc_no_folding = 1
 
