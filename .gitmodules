@@ -4,3 +4,6 @@
 [submodule ".vim/pack/marbu/opt/jedi-vim"]
 	path = .vim/pack/marbu/opt/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule ".vim/pack/marbu/start/tagbar"]
+	path = .vim/pack/marbu/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
