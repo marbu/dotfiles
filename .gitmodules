@@ -1,3 +1,6 @@
 [submodule ".vim/pack/marbu/start/vim-commentary"]
 	path = .vim/pack/marbu/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/pack/marbu/opt/jedi-vim"]
+	path = .vim/pack/marbu/opt/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
