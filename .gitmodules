@@ -13,3 +13,6 @@
 [submodule ".vim/pack/marbu/start/vim-pandoc-syntax"]
 	path = .vim/pack/marbu/start/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
+[submodule ".vim/pack/marbu/start/vim-orgmode"]
+	path = .vim/pack/marbu/start/vim-orgmode
+	url = https://github.com/jceb/vim-orgmode.git
