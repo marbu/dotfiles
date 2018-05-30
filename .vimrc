@@ -120,3 +120,8 @@ augroup END
 
 " tagbar toggle
 nmap <F8> :TagbarToggle<CR>
+
+" vim-gitgutter
+" update the git gutter signs when a file is saved (usefule only when realtime
+" updates are disabled)
+autocmd BufWritePost * GitGutter
