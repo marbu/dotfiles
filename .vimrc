@@ -122,6 +122,5 @@ augroup END
 nmap <F8> :TagbarToggle<CR>
 
 " vim-gitgutter
-" update the git gutter signs when a file is saved (usefule only when realtime
-" updates are disabled)
-autocmd BufWritePost * GitGutter
+" set low global updatetime for vim-gitgutter to instant updates, eg.
+set updatetime=250
