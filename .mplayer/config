@@ -1,0 +1,14 @@
+# Write your default config options here!
+
+# set font
+font=/usr/share/fonts/dejavu/DejaVuSansMono.ttf
+# set font encoding
+subfont-encoding=unicode
+
+# subtitle file encoding
+unicode=yes
+utf8=yes
+
+# ass subtitles
+ass=1
+ass-font-scale=1
