@@ -23,9 +23,6 @@ export PATH=$HOME/bin:$PATH
 # haskell
 export PATH=$PATH:.cabal/bin
 
-# initialize python virtualenvwrapper
-export WORKON_HOME=~/local/virtualenvs/
-
 #
 # aliases
 #
