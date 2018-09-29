@@ -12,3 +12,7 @@ utf8=yes
 # ass subtitles
 ass=1
 ass-font-scale=1
+
+# disable XScreenSaver while mplayer is running
+# see https://wiki.archlinux.org/index.php/XScreenSaver
+heartbeat-cmd="xscreensaver-command -deactivate &"
