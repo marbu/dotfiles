@@ -12,5 +12,6 @@ URxvt*background: black
 URxvt*foreground: white
 URxvt.scrollBar: false
 URxvt.perl-ext: confirm-paste
+URxvt.font: xft:terminus:size=12
 
 xscreensaver.newLoginCommand: dm-tool switch-to-greeter
