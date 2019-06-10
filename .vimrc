@@ -9,6 +9,8 @@ set nocompatible                   " just say no to the legacy vi craziness
 set encoding=utf-8                 " vim internal encoding (interface)
 set fileencodings=utf-8,iso8859-2  " expected encodings of files to open
 filetype plugin indent on          " load filetype plugins and indentations
+set modelines=0                    " allow only zero modeline lines to be read
+set nomodeline                     " disable modeline support (just in case :)
 
 "
 " basic interface
