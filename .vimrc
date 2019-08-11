@@ -23,6 +23,7 @@ set background=dark                " expect dark terminal emulator theme
 set tabstop=4                      " default tab size
 set shiftwidth=4                   " default (auto)indent size
 set backspace=indent,eol,start     " backspace through everything (insert mode)
+set scrolloff=0                    " 'gt' still goes to the top of the screen
 
 "
 " searching
