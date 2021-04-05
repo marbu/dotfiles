@@ -7,7 +7,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export EDITOR=vim
+export EDITOR=nvim
 export PAGER=less
 export HISTFILESIZE=500000
 
@@ -31,6 +31,9 @@ alias lt='ls -ltr'
 alias mc='mc -d'
 alias man="LANG=C man"
 alias cal="cal -m"
+
+alias vim='nvim'
+alias vimdiff='nvim -d'
 
 alias userctl="systemctl --user"
 source /usr/share/bash-completion/completions/systemctl
