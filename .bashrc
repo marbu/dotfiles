@@ -156,7 +156,7 @@ git-cd()
   fi
   if [[ $# = 0 ]]; then
     # no arguments, cd right into the repo root
-    cd ${GIT_ROOT}
+    cd "${GIT_ROOT}"
   elif [[ "$1" = - ]]; then
     cd -
   else
