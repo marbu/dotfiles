@@ -2,7 +2,7 @@
 
 show_help()
 {
-  echo -e "Usage: $(basename $0) <command> [command-options]\n"
+  echo -e "Usage: $(basename "$0") <command> [command-options]\n"
   echo """Commands:
   play    play stream     (options: --cache)
   dump    download stream (options: --name)
@@ -21,8 +21,11 @@ fi
 
 # debug mode
 if [[ $1 = "-d" ]]; then
+  # shellcheck disable=SC2209
   DEBUG=echo
   shift
+else
+  unset DEBUG
 fi
 
 case $1 in
