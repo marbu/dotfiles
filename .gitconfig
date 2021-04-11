@@ -24,3 +24,5 @@
   default = simple
 [init]
   defaultBranch = main
+[pull]
+  ff = only
