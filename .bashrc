@@ -180,3 +180,39 @@ _git-cd()
   COMPREPLY=($(cd $GIT_ROOT; compgen -S '/' -d $CUR))
 }
 complete -o nospace -F _git-cd git-cd
+
+# wiki-cd cd needs to be a shell function to be able to change directory
+wiki-cd()
+{
+  # set wiki dir path if not already specified
+  : "${WIKIDIR:=${HOME}/tvorba/wiki}"
+  # check that the wiki dir is reachable
+  if [[ ! -d "${WIKIDIR}" ]]; then
+    echo "wiki-cd: wiki dir ${WIKIDIR} not found" >&2
+    return 1
+  fi
+  if [[ $# = 0 ]]; then
+    # no arguments, cd right into the repo root
+    cd "${WIKIDIR}"
+  elif [[ "$1" = - ]]; then
+    cd -
+  else
+    # otherwise cd wrt repo root
+    cd "${WIKIDIR}/$1"
+  fi
+}
+
+# bash autocompletion for wiki-cd
+_wiki-cd()
+{
+  # set wiki dir path if not already specified
+  : "${WIKIDIR:=${HOME}/tvorba/wiki}"
+  # current word to complete
+  local CUR=${COMP_WORDS[COMP_CWORD]}
+  # remove absolute paths
+  if [[ "${CUR}" =~ ^/ ]]; then
+    CUR=${CUR#"/"}
+  fi
+  COMPREPLY=($(cd "${WIKIDIR}"; compgen -S '/' -d "${CUR}"))
+}
+complete -o nospace -F _wiki-cd wiki-cd
