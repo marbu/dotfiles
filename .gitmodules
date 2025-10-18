@@ -1,6 +1,3 @@
 [submodule ".vim/pack/marbu/start/vim-commentary"]
 	path = .vim/pack/marbu/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule ".vim/pack/marbu/start/vim-pandoc-syntax"]
-	path = .vim/pack/marbu/start/vim-pandoc-syntax
-	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
