@@ -1,9 +1,6 @@
 [submodule ".vim/pack/marbu/start/vim-commentary"]
 	path = .vim/pack/marbu/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule ".vim/pack/marbu/start/tagbar"]
-	path = .vim/pack/marbu/start/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule ".vim/pack/marbu/start/vim-gitgutter"]
 	path = .vim/pack/marbu/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
