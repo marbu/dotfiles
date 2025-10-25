@@ -4,3 +4,6 @@
 [submodule ".config/alacritty/themes"]
 	path = .config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme
+[submodule ".config/nvim/pack/marbu/start/orgmode"]
+	path = .config/nvim/pack/marbu/start/orgmode
+	url = https://github.com/nvim-orgmode/orgmode.git
