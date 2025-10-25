@@ -7,3 +7,6 @@
 [submodule ".config/nvim/pack/marbu/start/orgmode"]
 	path = .config/nvim/pack/marbu/start/orgmode
 	url = https://github.com/nvim-orgmode/orgmode.git
+[submodule ".config/nvim/pack/marbu/start/gitsigns"]
+	path = .config/nvim/pack/marbu/start/gitsigns
+	url = https://github.com/lewis6991/gitsigns.nvim
