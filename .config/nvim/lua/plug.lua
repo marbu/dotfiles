@@ -24,3 +24,13 @@ require('gitsigns').setup({
   signs_staged_enable = true,
   attach_to_untracked = false,
 })
+
+-- https://github.com/Shatur/neovim-ayu.git
+require('ayu').setup({
+  mirage = false,   -- don't use `mirage` instead of `dark` for dark background
+  terminal = false, -- set to `false` to let terminal manage its own colors
+  overrides = {
+    Comment = { italic = false },
+  },
+})
+require('ayu').colorscheme()
