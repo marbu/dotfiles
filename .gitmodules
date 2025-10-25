@@ -13,3 +13,6 @@
 [submodule ".config/nvim/pack/marbu/start/neovim-ayu"]
 	path = .config/nvim/pack/marbu/start/neovim-ayu
 	url = https://github.com/Shatur/neovim-ayu.git
+[submodule ".config/nvim/pack/marbu/start/nvim-lastplace"]
+	path = .config/nvim/pack/marbu/start/nvim-lastplace
+	url = https://github.com/ethanholz/nvim-lastplace
