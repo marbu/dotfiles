@@ -10,3 +10,6 @@
 [submodule ".config/nvim/pack/marbu/start/gitsigns"]
 	path = .config/nvim/pack/marbu/start/gitsigns
 	url = https://github.com/lewis6991/gitsigns.nvim
+[submodule ".config/nvim/pack/marbu/start/neovim-ayu"]
+	path = .config/nvim/pack/marbu/start/neovim-ayu
+	url = https://github.com/Shatur/neovim-ayu.git
