@@ -92,24 +92,3 @@ autocmd BufRead,BufNewFile *.java set number
 "
 
 autocmd BufNewFile *.[a-zA-Z0-9]\+ silent! 0read $HOME/.vim/skeleton/skeleton.<amatch>:t:e
-
-"
-" remove trailing whitespaces
-"
-
-"autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
-
-"
-" others
-"
-
-" shortcut: F9 runs make
-map <F9> :make<CR>
-imap <F9> :make<CR>
-
-" automaticke doplnovani ze vsech includovanych veci
-set completeopt=longest,menuone
-
-" vim buffers switching
-map <F1> :args<cr>
-map <F2> :ls<CR>:b<Space>
