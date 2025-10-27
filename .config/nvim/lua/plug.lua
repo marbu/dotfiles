@@ -26,11 +26,14 @@ require('gitsigns').setup({
 })
 
 -- https://github.com/Shatur/neovim-ayu.git
+local colors = require('ayu.colors')
+colors.generate() -- Pass `true` to enable mirage
 require('ayu').setup({
   mirage = false,   -- don't use `mirage` instead of `dark` for dark background
   terminal = false, -- set to `false` to let terminal manage its own colors
   overrides = {
     Comment = { italic = false },
+    LineNr = { fg = colors.comment },
   },
 })
 require('ayu').colorscheme()
