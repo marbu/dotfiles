@@ -55,4 +55,4 @@ opt.splitbelow = true            -- bool: Place new window below the current one
 
 -- Temp files
 opt.backup = true
--- opt.backupdir = '$HOME/.cache/nvim/backup'
+opt.backupdir = vim.fn.stdpath('cache') .. '/backup'
