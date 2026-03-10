@@ -1,0 +1,15 @@
+; Based on
+; https://wiki.archlinux.org/title/Tmux#Start_with_systemd_user_instance_and_socket_activation
+
+[Unit]
+Description=Terminal Multiplexer Activation Socket (listen on: %i)
+Documentation=man:tmux(1)
+
+[Socket]
+ListenStream=/tmp/tmux-%U/%i
+SocketMode=0600
+DirectoryMode=0700
+Service=tmux@%i.service
+
+[Install]
+WantedBy=sockets.target
